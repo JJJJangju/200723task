@@ -1,0 +1,16 @@
+<h1>Sign Up!</h1>
+
+<form method="POST" action="{% url 'signup' %}">
+    {% csrf_token %}
+    Username:
+    <input name="username" type="text" value="">
+    Password:
+    <input name="password1" type="password" value="">
+    Confirm Password:
+    <input name="password2" type="password" value="">
+    닉네임:
+    <input name="nickname" type="text" value="">
+    지역:
+    <input name="region" type="text" value="">
+    <input type="submit" value="Sign Up!">
+</form>
